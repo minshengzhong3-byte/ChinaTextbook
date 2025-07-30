@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北师大版数学五年级上册</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>北师大版数学五年级上册</h1>
+        <nav>
+            <ul>
+                <li><a href="#chapter1">第一章</a></li>
+                <li><a href="#chapter2">第二章</a></li>
+                <li><a href="#exercises">练习题</a></li>
+                <li><a href="#progress">学习进度</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="textbook">
+            <h2>教材内容</h2>
+            <iframe src="小学/数学/北师大版/义务教育教科书·数学五年级上册.pdf" type="application/pdf" width="100%" height="600px"></iframe>
+        </section>
+
+        <section id="exercises">
+            <h2>智能练习题</h2>
+            <div class="exercise-block">
+                <p>解方程：3x + 5 = 20</p>
+                <input type="number" id="answer1" oninput="checkAnswer(1, this.value)">
+                <div id="feedback1" class="feedback"></div>
+            </div>
+        </section>
+
+        <section id="progress">
+            <h2>学习进度</h2>
+            <div id="progress-bar"></div>
+            <button onclick="resetProgress()">重置进度</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 数学自学平台</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
